@@ -39,6 +39,7 @@ Here is an example of a playbook targeting Vagrant (Ubuntu Xenial):
   remote_user: "ubuntu"
   become: True
   vars:
+    es_version: "6.8.6"
     es_enable_xpack: False
     es_instance_name: "graylog"
     es_heap_size: "1g"
@@ -97,6 +98,7 @@ More detailed example
 - hosts: "server"
   become: True
   vars:
+    es_version: "6.8.6"
     es_instance_name: "graylog"
     es_scripts: False
     es_templates: False
